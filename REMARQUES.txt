@@ -1,0 +1,33 @@
+Madame, j'ai télechargé un package qui s'appelle Guna UI2 WinForms.
+Il me donne plusieurs outils, comme des boutons améliorés du côté UI,
+des bordures arrondies avec une flexibilité de modification des rayons,
+un DateTimePicker plus avancé et d'autres outils. (les noms des outils commencent toujours par guna)
+pour le télécharger j'ai fait à partir de la solution :
+projet -> gérer les packages NuGet -> Parcourir -> et saisir le nom du package dans la barre de recherche puis installer.
+
+
+pour le fonctionnement de l'application :
+- l'application contient 8 fenetres :
+1- se_connecter : pour l'accès à l'application
+2- nouveau-mdp : changer le mot de passe (par saisie du nouveau mdp seulement)
+3- menu : qui affiche le menu de l'application.
+4- Liste_patients : contient listviewPatients qui affiche tous les patients qui existent dans le fichier patients.txt
+                    bouton supprimer : supprimer les patients sélectionnés
+                    bouton Ajouter qui ouvre la fenetre Ajout_patient et ajouter un nouveau patient
+                    bouton Chercher qui ouvre la fenetre Chercher_patient.
+5- Ajout_patient : ajouter un nouveau patient.
+6- Chercher_patient : un filtrage se fait par la selection de la date de naissance et selon cette date les patients s'affichent dans la listviewPatients.
+7- Rendez_vous : afiiche la liste des rendez-vous à partir du fichier .txt "Rendez-vous"
+8- Ajout_RV : Permet de l'ajout d'un nouveau rendez-vous en mettant les informations necessaires.
+
+les icones : iconBACK : retourner
+             iconMENU : ouvrir le menu
+             iconEXIT : quitter l'application
+             iconRefresh (dans la fenetre chercher_patient) qui actualise la liste des patient dans la listviewPatients
+             iconSUPPRIMER et iconModifier.
+ansi que les boutons qui permettent la navigation entre les différentes fenetres et la confirmation des actions adéquates.
+
+
+
+J'espère que mon travail vous plaira.
+ 

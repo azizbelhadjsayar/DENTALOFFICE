@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8ACEF25E-9E65-4353-970E-5195F81A199A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DS1</RootNamespace>
+    <AssemblyName>DS1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\LENOVO\Desktop\app\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>80E497648BFD63BF680B89719AB5BAB65F2CDBE8</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>DS1 - Aziz Belhadj Sayar_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.4\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ajout_patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajout_patient.Designer.cs">
+      <DependentUpon>Ajout_patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ajout_RV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajout_RV.Designer.cs">
+      <DependentUpon>Ajout_RV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chercher_patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chercher_patient.Designer.cs">
+      <DependentUpon>Chercher_patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Liste_patients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Liste_patients.Designer.cs">
+      <DependentUpon>Liste_patients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu.Designer.cs">
+      <DependentUpon>menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nouveau_mdp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nouveau_mdp.Designer.cs">
+      <DependentUpon>nouveau_mdp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rendez_vous.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rendez_vous.Designer.cs">
+      <DependentUpon>Rendez_vous.cs</DependentUpon>
+    </Compile>
+    <Compile Include="se_connecter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="se_connecter.Designer.cs">
+      <DependentUpon>se_connecter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Ajout_patient.resx">
+      <DependentUpon>Ajout_patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ajout_RV.resx">
+      <DependentUpon>Ajout_RV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chercher_patient.resx">
+      <DependentUpon>Chercher_patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Liste_patients.resx">
+      <DependentUpon>Liste_patients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu.resx">
+      <DependentUpon>menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nouveau_mdp.resx">
+      <DependentUpon>nouveau_mdp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rendez_vous.resx">
+      <DependentUpon>Rendez_vous.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="se_connecter.resx">
+      <DependentUpon>se_connecter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="DS1 - Aziz Belhadj Sayar_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGES\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGES\13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGES\12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGES\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGES\14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGES\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGES\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGES\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGES\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGES\15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGES\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGES\11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
